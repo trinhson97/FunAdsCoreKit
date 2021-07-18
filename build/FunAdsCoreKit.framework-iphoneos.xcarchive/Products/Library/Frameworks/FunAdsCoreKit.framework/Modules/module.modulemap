@@ -1,0 +1,11 @@
+framework module FunAdsCoreKit {
+  umbrella header "FunAdsCoreKit.h"
+
+  export *
+  module * { export * }
+}
+
+module FunAdsCoreKit.Swift {
+    header "FunAdsCoreKit-Swift.h"
+    requires objc
+}
