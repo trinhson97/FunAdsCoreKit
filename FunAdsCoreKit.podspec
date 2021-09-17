@@ -1,13 +1,16 @@
 
 Pod::Spec.new do |spec|
   spec.name         = "FunAdsCoreKit"
-  spec.version      = "0.0.3"
-  spec.summary      = "A short description of FunAdsCoreKit."
-  spec.homepage     = "http://EXAMPLE/FunAdsCoreKit"
-  spec.license      = "MIT (example)"
-
+  spec.version      = "0.0.4"
+  spec.ios.deployment_target      = "10.0"
+  spec.summary      = "FunAdsCoreKit suport show ads of Playfun team to all platform"
+  spec.homepage     = "https://github.com/trinhson97"
+  spec.license      = "MIT"
+  spec.description  = <<-DESC
+                    FunAdsCoreKit is a small and lightweight Swift framework that allows to monitor and being notified for network status changes in a super-easy way!
+                   DESC
   spec.author             = { "sontb" => "sontb@funtap.vn" }
-  spec.platform     = :ios
+  spec.platform     = :ios, "10.0"
   spec.source       = { :git => "https://github.com/trinhson97/FunAdsCoreKit.git", :tag => "#{spec.version}" }
   spec.source_files  = "FunAdsCoreKit/**/*.{h,m,swift}"
 

@@ -144,11 +144,12 @@ import UIKit
             config.interactiveHide = false
             config.dimMode = .gray(interactive: false)
             let messageView = BaseView(frame: .zero)
+            view.backgroundHeight = UIScreen.main.bounds.size.width - 30
             do {
                 let backgroundView = CornerRoundingView()
                 messageView.installBackgroundView(backgroundView)
                 messageView.installContentView(view)
-                messageView.layoutMarginAdditions = UIEdgeInsets(top: 38, left: 32, bottom: 0, right: 32)
+                messageView.layoutMarginAdditions = UIEdgeInsets(top: 38, left: 15, bottom: 0, right: 15)
             }
             Timer.scheduledTimer(withTimeInterval: Double(detailInventory?.data?.countdown?.value ?? 0), repeats: false) { timer in
                 SwiftMessages.show(config: config, view: messageView)
