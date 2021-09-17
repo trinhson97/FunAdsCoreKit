@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |spec|
   spec.name         = "FunAdsCoreKit"
-  spec.version      = "3.0.2"
+  spec.version      = "3.1.0"
   spec.ios.deployment_target      = "10.0"
   spec.summary      = "FunAdsCoreKit suport show ads of Playfun team to all platform"
   spec.homepage     = "https://github.com/trinhson97"
@@ -12,7 +12,7 @@ Pod::Spec.new do |spec|
   spec.author             = { "sontb" => "sontb@funtap.vn" }
   spec.platform     = :ios, "10.0"
   spec.source       = { :git => "https://github.com/trinhson97/FunAdsCoreKit.git", :tag => "#{spec.version}" }
-  spec.source_files  = "FunAdsCoreKit/**/*"
+  spec.source_files  = "FunAdsCoreKit/*.{h,m}"
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #

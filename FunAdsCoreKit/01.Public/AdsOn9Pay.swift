@@ -6,8 +6,8 @@
 //
 import Foundation
 
-public class NinePayAds: NSObject {
-    public class func init_ads(api_key: String, completion: @escaping ([Inventory]) -> ()) {
+open class NinePayAds: NSObject {
+    open class func initAds(api_key: String, completion: @escaping ([Inventory]) -> ()) {
         Storage.app_id = api_key
         APIManage.shared.getApp(ApiKey: api_key) { (status, Inventorys) in
             if status != false {
@@ -18,7 +18,7 @@ public class NinePayAds: NSObject {
         }
     }
 
-    public class func showAdsOn9payApp(code: String, ctaType: String ,completion: @escaping (String) -> ()) {
+    open class func showAdsOn9payApp(code: String, ctaType: String ,completion: @escaping (String) -> ()) {
         if let data = Storage.getInventorysWithCode(code: code) {
             AdsIOSControl.showAdsSDK(code: data.code, id: data.id)
             Storage.getCtaAction = { inventory in
@@ -41,12 +41,12 @@ public class NinePayAds: NSObject {
         }
     }
     
-    public class func closeAds(completion: @escaping () -> ()) {
+    open class func closeAds(completion: @escaping () -> ()) {
         SwiftMessages.hide()
         completion()
     }
     
-    public class func saveUserInfor(user_id: String?) {
+    open class func saveUserInfor(user_id: String?) {
         Storage.user_id = user_id ?? ""
     }
 }
