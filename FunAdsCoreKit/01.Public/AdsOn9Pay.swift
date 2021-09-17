@@ -1,10 +1,9 @@
 //
-//  AdsOn9Pay.swift
+//  AdsSDK9Pay.swift
 //  FunAdsCoreKit
 //
-//  Created by IT on 6/23/21.
+//  Created by Trịnh Bảo Sơn'Mac on 30/07/2021.
 //
-
 import Foundation
 
 public class NinePayAds: NSObject {
@@ -13,17 +12,12 @@ public class NinePayAds: NSObject {
         APIManage.shared.getApp(ApiKey: api_key) { (status, Inventorys) in
             if status != false {
                 Storage.setInventorys(Inventorys)
+//                Storage.requestPermission()
                 completion(Inventorys.data ?? [])
             }
         }
     }
 
-    // MARK: ACtion when user click to CTA and return callback
-    // ctaType:
-    //   + all: open to browser/ open to store Apple + return jsonbase64 on CMS
-    //   + only_callback: only return jsonbase64 (not open to browser)
-    //   + only_browser: only open to browser (not return jsonbase64)
-    // if ctaType different from the above 3 cases ads will dont show
     public class func showAdsOn9payApp(code: String, ctaType: String ,completion: @escaping (String) -> ()) {
         if let data = Storage.getInventorysWithCode(code: code) {
             AdsIOSControl.showAdsSDK(code: data.code, id: data.id)
@@ -47,12 +41,10 @@ public class NinePayAds: NSObject {
         }
     }
     
-    // MARK: Close ads
     public class func closeAds(completion: @escaping () -> ()) {
         SwiftMessages.hide()
         completion()
     }
-    
     
     public class func saveUserInfor(user_id: String?) {
         Storage.user_id = user_id ?? ""

@@ -7,9 +7,9 @@
 
 import Foundation
 
-public class Inventorys: BaseModelJSON, Codable {
+class Inventorys: BaseModelJSON, Codable {
     
-    public var data: [Inventory]?
+    var data: [Inventory]?
     
     override init() {
         super.init()
@@ -19,7 +19,7 @@ public class Inventorys: BaseModelJSON, Codable {
         super.init(map: map)
     }
     
-    override public func mapping(map: Map) {
+    override func mapping(map: Map) {
         code <- (map["code"])
         message <- (map["message"])
         data <- (map["data"])

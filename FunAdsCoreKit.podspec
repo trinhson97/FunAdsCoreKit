@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |spec|
   spec.name         = "FunAdsCoreKit"
-  spec.version      = "0.0.4"
+  spec.version      = "2.0.0"
   spec.ios.deployment_target      = "10.0"
   spec.summary      = "FunAdsCoreKit suport show ads of Playfun team to all platform"
   spec.homepage     = "https://github.com/trinhson97"

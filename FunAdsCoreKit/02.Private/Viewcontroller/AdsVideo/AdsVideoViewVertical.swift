@@ -69,9 +69,10 @@ class AdsVideoViewVertical: MessageView {
     
     func loadDataAds(_ detailInventory: DetailInventory?) {
         self.data = detailInventory ?? DetailInventory()
-        guard let urlImage = URL(string: detailInventory?.data?.metaData?.logoImage?.data ?? "") else { return }
-        iconGameImage.load(url: urlImage)
-        iconGameWhenEndVideoImage.load(url: urlImage)
+        if let urlImage = URL(string: detailInventory?.data?.metaData?.logoImage?.data ?? "")  {
+            iconGameImage.load(url: urlImage)
+            iconGameWhenEndVideoImage.load(url: urlImage)
+        }
         descriptionGameLabel.text = detailInventory?.data?.metaData?.shortDescription?.data
         nameGameLabel.text = detailInventory?.data?.metaData?.shortTitle?.data
         descriptionGameReplayLabel.text = detailInventory?.data?.metaData?.shortDescription?.data

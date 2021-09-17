@@ -6,10 +6,13 @@
 //
 
 import Foundation
+//import AppTrackingTransparency
+//import AdSupport
 import UIKit
 
-@objc public class Storage: NSObject {
+class Storage {
     static let KEY_DB_LOCAL = "playfun_list_conditions"
+    static var idfa = ""
     static let version_ads = "1.0.1"
     static var user_id = ""
     static let version_name: String = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as! String
@@ -25,6 +28,16 @@ import UIKit
     static var params_tracking = ""
     static var tracking_view_url = ""
     static var appKey = ""
+    static var ads_conditions_link = ""
+    
+    static func getUUID() -> String{
+        if let uuid = UIDevice.current.identifierForVendor?.uuidString {
+            return uuid
+        }else {
+            return ""
+        }
+    }
+    
     static func orientation() -> String {
         if UIApplication.shared.statusBarOrientation.isPortrait {
             return "1"
@@ -32,6 +45,34 @@ import UIKit
             return "0"
         }
     }
+    
+//    static func requestPermission() {
+//        if #available(iOS 14, *) {
+//            ATTrackingManager.requestTrackingAuthorization { status in
+//                switch status {
+//                case .authorized:
+//                    // Tracking authorization dialog was shown
+//                    // and we are authorized
+//                    print("Authorized")
+//
+//                    // Now that we are authorized we can get the IDFA
+//                    print(ASIdentifierManager.shared().advertisingIdentifier)
+//                    Storage.idfa = "\(ASIdentifierManager.shared().advertisingIdentifier)"
+//                case .denied:
+//                    // Tracking authorization dialog was
+//                    // shown and permission is denied
+//                    print("Denied")
+//                case .notDetermined:
+//                    // Tracking authorization dialog has not been shown
+//                    print("Not Determined")
+//                case .restricted:
+//                    print("Restricted")
+//                @unknown default:
+//                    print("Unknown")
+//                }
+//            }
+//        }
+//    }
     
     static var getCtaAction: ((_ data: DetailInventory) -> Void)?
     

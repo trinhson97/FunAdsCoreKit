@@ -28,7 +28,7 @@ class RewardView: MessageView {
     @IBAction func ActionAds(_ sender: Any) {
         SwiftMessages.hide()
         if let data = Storage.getInventorysWithCode(code: self.detailInventory?.data?.next_step ?? "") {
-            actionShowAds.ads(code: data)
+            AdsIOSControl.showAdsSDK(code: data.code, id: data.id)
         }
     }
     

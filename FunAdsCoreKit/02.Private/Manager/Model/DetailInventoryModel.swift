@@ -39,6 +39,7 @@ class DataShowOnAds: Mappable, Codable {
     var even_id: String?
     var countdown: Countdown?
     var countdown_off: CountdownOff?
+    var ads_conditions: [AdsConditions]?
     var tracking_view_url: String?
     required init?(map: Map) {}
     
@@ -56,6 +57,7 @@ class DataShowOnAds: Mappable, Codable {
         tracking_view_url <- (map["tracking_view_url"])
         even_id <- (map["even_id"])
         countdown_off <- (map["countdown_off"])
+        ads_conditions <- (map["ads_conditions"])
     }
     
 }
@@ -100,5 +102,23 @@ class Limit: Mappable, Codable {
     var end_time: String?
     var max_on_day: String?
     var distance: String?
+    
+}
+
+class AdsConditions:Mappable, Codable {
+    required init?(map: Map) {
+    }
+    
+    func mapping(map: Map) {
+        ads_id <- (map["ads_id"])
+        value <- (map["value"])
+        link <- (map["link"])
+        type <- (map["type"])
+    }
+    
+    var ads_id: Int!
+    var value: Bool?
+    var link: String?
+    var type: String?
     
 }

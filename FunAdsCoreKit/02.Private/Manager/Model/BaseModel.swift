@@ -7,7 +7,7 @@
 
 import Foundation
 
-public class BaseModelJSON: Mappable {
+class BaseModelJSON: Mappable {
     
     var code: Int!
     var message: String?
@@ -21,6 +21,6 @@ public class BaseModelJSON: Mappable {
     
     init() {}
     
-    public required init?(map: Map) {
+    required init?(map: Map) {
     }
 }

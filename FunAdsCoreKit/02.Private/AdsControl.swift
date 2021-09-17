@@ -8,8 +8,8 @@
 import Foundation
 import UIKit
 
-@objc public class AdsIOSControl: NSObject {
-    @objc public class func showAdsSDK(code: String, id: Int) {
+class AdsIOSControl: NSObject {
+    class func showAdsSDK(code: String, id: Int) {
         Storage.inventory_id = "\(id)"
         Storage.inventory_code = code
         APIManage.shared.getinventory(code: code) { (status, DetailInventory) in
@@ -90,13 +90,13 @@ import UIKit
         }
     }
     
-    @objc public class func openUrl(url : String) {
+    class func openUrl(url : String) {
         if let url = URL(string: "\(url)") {
             UIApplication.shared.open(url)
         }
     }
 
-    //MARk: Tracking view
+    //MARK: Tracking view
     private class func trackingView(raa_id: String?, inventory_id: String?, inventory_code: String?) {
         APIManage.shared.trackingAds(raa_id: "\(raa_id ?? "")", inventory_id: "\(inventory_id ?? "")", inventory_code: "\(inventory_code ?? "")") {
             BLog("Done Tracking")
@@ -144,12 +144,12 @@ import UIKit
             config.interactiveHide = false
             config.dimMode = .gray(interactive: false)
             let messageView = BaseView(frame: .zero)
-            view.backgroundHeight = UIScreen.main.bounds.size.width - 30
+            messageView.backgroundHeight = UIScreen.main.bounds.size.width - 44
             do {
                 let backgroundView = CornerRoundingView()
                 messageView.installBackgroundView(backgroundView)
                 messageView.installContentView(view)
-                messageView.layoutMarginAdditions = UIEdgeInsets(top: 38, left: 15, bottom: 0, right: 15)
+                messageView.layoutMarginAdditions = UIEdgeInsets(top: 38, left: 32, bottom: 0, right: 32)
             }
             Timer.scheduledTimer(withTimeInterval: Double(detailInventory?.data?.countdown?.value ?? 0), repeats: false) { timer in
                 SwiftMessages.show(config: config, view: messageView)

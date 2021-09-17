@@ -20,7 +20,6 @@ enum HTTPMethod: String {
     case connect = "CONNECT"
 }
 
-
 enum DAPIDefine : String {
     case inventory = "/inventory/"
     case app = "/app/"
@@ -29,8 +28,8 @@ enum DAPIDefine : String {
     case traking = "https://storage.googleapis.com/prod-adsfun/pixel/pixel.jpg"
     
     func url() -> String {
-        let HOST = "https://ads-api.playfun.vn/v3"
-//        let HOST = "https://stg-ads-api.playfun.vn/v3"
+//        let HOST = "https://ads-api.playfun.vn/v3"
+        let HOST = "https://stg-ads-api.playfun.vn/v3"
         return HOST + self.rawValue
     }
 }
@@ -87,7 +86,8 @@ class APIManage: NSObject {
                                            "character-id": Storage.character_id,
                                            "server-id": Storage.server_id,
                                            "token": Storage.token,
-                                           "appkey": Storage.appKey
+                                           "appkey": Storage.appKey,
+                                           "app-client-id": Storage.getUUID()
                                           ]
                 request.allHTTPHeaderFields = headers
             } else if method == .post {
@@ -111,7 +111,8 @@ class APIManage: NSObject {
                                            "character-id": Storage.character_id,
                                            "server-id": Storage.server_id,
                                            "token": Storage.token,
-                                           "appkey": Storage.appKey
+                                           "appkey": Storage.appKey,
+                                           "app-client-id": Storage.getUUID()
                                           ]
                 request.allHTTPHeaderFields = headers
                 if paramJson != "" {
@@ -139,7 +140,8 @@ class APIManage: NSObject {
                                            "character-id": Storage.character_id,
                                            "server-id": Storage.server_id,
                                            "token": Storage.token,
-                                           "appkey": Storage.appKey
+                                           "appkey": Storage.appKey,
+                                           "app-client-id": Storage.getUUID()
                                           ]
                 request.allHTTPHeaderFields = headers
                 if paramJson != "" {
@@ -225,6 +227,19 @@ extension APIManage {
             complete()
         }
     }
+    
+    func trackingAdsConditions(){
+        if Storage.ads_conditions_link != "" {
+            request(urlString: Storage.ads_conditions_link, paramJson: "", method: .get) { (success, data) in
+                if success {
+                    BLog("Oke")
+                }else {
+                    BLog("Tạch")
+                }
+            }
+        }
+    }
+
     
     func getAllApp(complete: @escaping (Bool, AppsModel) -> ()){
         let url = DAPIDefine.apps.url()

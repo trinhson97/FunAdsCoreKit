@@ -7,7 +7,7 @@
 
 import Foundation
 
-let DEBUG_LEVEL = 10
+let DEBUG_LEVEL = 5
 
 func BLog(_ logMessage: String, functionName: String = #function, line: Int = #line, fileName:String = #file, column:Int = #column) {
     if DEBUG_LEVEL == 1 || DEBUG_LEVEL == 5 {

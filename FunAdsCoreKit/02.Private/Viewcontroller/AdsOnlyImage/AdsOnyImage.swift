@@ -13,6 +13,9 @@ class AdsOnyImage: MessageView {
     
     @IBOutlet weak var offView: UIView!
     @IBOutlet weak var offLabel: UILabel!
+    @IBOutlet weak var icSelectImage: UIImageView!
+    @IBOutlet weak var checkboxView: UIView!
+    var isSelect: Bool = true
     var url: String = ""
     var gameTimer: Timer?
     var counter = 0
@@ -28,6 +31,18 @@ class AdsOnyImage: MessageView {
     }
     
     func loadData(_ detailInventory: DetailInventory?) {
+        if detailInventory?.data?.ads_conditions?.count ?? 0 > 0{
+            if let ads_conditions = detailInventory?.data?.ads_conditions?[0] {
+                if ads_conditions.value != true {
+                    checkboxView.isHidden = true
+                }else{
+                    checkboxView.isHidden = false
+                }
+                Storage.ads_conditions_link = ads_conditions.link ?? ""
+            }else {
+                checkboxView.isHidden = true
+            }
+        }
         self.dataInventory = detailInventory ?? DetailInventory()
         guard let urlBackgroundGame = URL(string: detailInventory?.data?.metaData?.imageBanner?.data ?? "") else { return }
         self.url = detailInventory?.data?.metaData?.cta0?.link ?? ""
@@ -80,7 +95,21 @@ class AdsOnyImage: MessageView {
     
     @IBAction func ActionClose(_ sender: Any) {
         SwiftMessages.hide()
+        if !isSelect {
+            APIManage.shared.trackingAdsConditions()            
+        }
     }
+    
+    @IBAction func ActionAdsConditions(_ sender: Any) {
+        if isSelect {
+            icSelectImage.isHidden = false
+            self.isSelect = false
+        }else {
+            icSelectImage.isHidden = true
+            self.isSelect = true
+        }
+    }
+    
     @IBAction func ActionCTA(_ sender: Any) {
         BLog("CTA")
         Storage.getCtaAction?(dataInventory)
