@@ -28,8 +28,8 @@ enum DAPIDefine : String {
     case traking = "https://storage.googleapis.com/prod-adsfun/pixel/pixel.jpg"
     
     func url() -> String {
-//        let HOST = "https://ads-api.playfun.vn/v3"
-        let HOST = "https://stg-ads-api.playfun.vn/v3"
+        let HOST = "https://ads-api.playfun.vn/v3"
+//        let HOST = "https://stg-ads-api.playfun.vn/v3"
         return HOST + self.rawValue
     }
 }
