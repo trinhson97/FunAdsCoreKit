@@ -63,18 +63,6 @@ class AdsIOSControl: NSObject {
                     self.trackingView(raa_id: Storage.raa_id, inventory_id: "\(id)", inventory_code: code)
                     self.showPopupCountDown(Double(DetailInventory.data?.countdown?.value ?? 0))
                     self.showAdsDropdownText(data: DetailInventory, Double(DetailInventory.data?.countdown_off?.value ?? 0))
-                }else if DetailInventory.data?.templateType == "reward" {
-                    self.trackingView(raa_id: Storage.raa_id, inventory_id: "\(id)", inventory_code: code)
-                    self.showPopupCountDown(Double(DetailInventory.data?.countdown?.value ?? 0))
-                    self.showRewadView(DetailInventory)
-                }else if DetailInventory.data?.templateType == "reward-video" {
-                    self.trackingView(raa_id: Storage.raa_id, inventory_id: "\(id)", inventory_code: code)
-                    self.showPopupCountDown(Double(DetailInventory.data?.countdown?.value ?? 0))
-                    if UIApplication.shared.statusBarOrientation.isPortrait {
-                        self.showRewadsAds(DetailInventory)
-                    }else {
-                        self.showRewadsAdsHorizontal(DetailInventory)
-                    }
                 }else if DetailInventory.data?.templateType == "long-images" {
                     self.trackingView(raa_id: Storage.raa_id, inventory_id: "\(id)", inventory_code: code)
                     self.showPopupCountDown(Double(DetailInventory.data?.countdown?.value ?? 0))
@@ -188,64 +176,6 @@ class AdsIOSControl: NSObject {
         let ctrl = AdsLongImageVerticalViewController.loadFromNib()
         ctrl.detailInven = detailInventory
         ctrl.showAds()
-    }
-    
-    // MARK: Control Rewads Ads
-    
-    class func showRewadView(_ detailInventory: DetailInventory?) {
-        let view: RewardView = try! SwiftMessages.viewFromNib()
-        view.loadData(detailInventory)
-        let messageView = BaseView(frame: .zero)
-        do {
-            let backgroundView = CornerRoundingView()
-            messageView.installBackgroundVerticalView(backgroundView, insets: UIEdgeInsets(top: 50, left: 30, bottom: 0, right: 30))
-            messageView.installContentView(view)
-        }
-        var config = SwiftMessages.defaultConfig
-        config.presentationContext = .window(windowLevel: UIWindow.Level.normal)
-        config.duration = .forever
-        config.presentationStyle = .top
-        config.interactiveHide = false
-        config.dimMode = .none
-        SwiftMessages.show(config: config, view: messageView)
-    }
-    
-    class func showRewadsAdsHorizontal(_ detailInventory: DetailInventory?) {
-        let view: RewarAdsVertical = try! SwiftMessages.viewFromNib()
-        view.loadDataAds(detailInventory)
-        let messageView = BaseView(frame: .zero)
-        do {
-            messageView.installContentViewReward(view)
-            messageView.layoutMarginAdditions = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
-        }
-        var config = SwiftMessages.defaultConfig
-        config.presentationContext = .window(windowLevel: UIWindow.Level.normal)
-        config.duration = .forever
-        config.presentationStyle = .center
-        config.interactiveHide = false
-        config.dimMode = .gray(interactive: false)
-        Timer.scheduledTimer(withTimeInterval: Double(detailInventory?.data?.countdown?.value ?? 0), repeats: false) { timer in
-            SwiftMessages.show(config: config, view: messageView)
-        }
-    }
-    
-    class func showRewadsAds(_ detailInventory: DetailInventory?) {
-        let view: RewardsAds = try! SwiftMessages.viewFromNib()
-        view.loadDataAds(detailInventory)
-        let messageView = BaseView(frame: .zero)
-        do {
-            messageView.installContentViewReward(view)
-            messageView.layoutMarginAdditions = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
-        }
-        var config = SwiftMessages.defaultConfig
-        config.presentationContext = .window(windowLevel: UIWindow.Level.normal)
-        config.duration = .forever
-        config.presentationStyle = .center
-        config.interactiveHide = false
-        config.dimMode = .gray(interactive: false)
-        Timer.scheduledTimer(withTimeInterval: Double(detailInventory?.data?.countdown?.value ?? 0), repeats: false) { timer in
-            SwiftMessages.show(config: config, view: messageView)
-        }
     }
     
     // MARK:  Control Ads Dropdown Text

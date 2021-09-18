@@ -12,7 +12,7 @@ Pod::Spec.new do |spec|
   spec.author             = { "sontb" => "sontb@funtap.vn" }
   spec.platform     = :ios, "10.0"
   spec.source       = { :git => "https://github.com/trinhson97/FunAdsCoreKit.git", :tag => "#{spec.version}" }
-  spec.source_files  = "FunAdsCoreKit/01.Public/**/*.{swift}"
+  spec.source_files  = "FunAdsCoreKit/**/*.{swift}"
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #

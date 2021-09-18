@@ -171,6 +171,33 @@
 		FA8E28E326AD543100ABFA42 /* PopupCountDown.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA8E28E126AD543100ABFA42 /* PopupCountDown.xib */; };
 		FA8E291326AD553800ABFA42 /* AdsOn9Pay.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8E291026AD553800ABFA42 /* AdsOn9Pay.swift */; };
 		FA8E291526AD553800ABFA42 /* AdsSDK.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8E291226AD553800ABFA42 /* AdsSDK.swift */; };
+		FAC03DAA26F5792200EAEC9A /* AdsOnlyImageVerticalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC03DA526F5792200EAEC9A /* AdsOnlyImageVerticalView.swift */; };
+		FAC03DAB26F5792200EAEC9A /* AdsOnyImage.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAC03DA626F5792200EAEC9A /* AdsOnyImage.xib */; };
+		FAC03DAD26F5792200EAEC9A /* AdsOnyImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC03DA826F5792200EAEC9A /* AdsOnyImage.swift */; };
+		FAC03DAE26F5792200EAEC9A /* AdsOnlyImageVerticalView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAC03DA926F5792200EAEC9A /* AdsOnlyImageVerticalView.xib */; };
+		FAC03DB826F57A1300EAEC9A /* AdsDropDownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC03DB126F57A1300EAEC9A /* AdsDropDownView.swift */; };
+		FAC03DB926F57A1300EAEC9A /* AdsDropDownVerticalView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAC03DB226F57A1300EAEC9A /* AdsDropDownVerticalView.xib */; };
+		FAC03DBA26F57A1300EAEC9A /* AdsWhire.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAC03DB326F57A1300EAEC9A /* AdsWhire.xib */; };
+		FAC03DBB26F57A1300EAEC9A /* AdsWhire.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC03DB426F57A1300EAEC9A /* AdsWhire.swift */; };
+		FAC03DBC26F57A1300EAEC9A /* AdsDropDownVerticalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC03DB526F57A1300EAEC9A /* AdsDropDownVerticalView.swift */; };
+		FAC03DBD26F57A1300EAEC9A /* AdsDropDownView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAC03DB626F57A1300EAEC9A /* AdsDropDownView.xib */; };
+		FAC03DBE26F57A1300EAEC9A /* CircularProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC03DB726F57A1300EAEC9A /* CircularProgressView.swift */; };
+		FAC03DC426F57A6000EAEC9A /* AdsLongImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC03DC026F57A6000EAEC9A /* AdsLongImageViewController.swift */; };
+		FAC03DC526F57A6000EAEC9A /* AdsLongImageVerticalViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAC03DC126F57A6000EAEC9A /* AdsLongImageVerticalViewController.xib */; };
+		FAC03DC626F57A6000EAEC9A /* AdsLongImageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAC03DC226F57A6000EAEC9A /* AdsLongImageViewController.xib */; };
+		FAC03DC726F57A6000EAEC9A /* AdsLongImageVerticalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC03DC326F57A6000EAEC9A /* AdsLongImageVerticalViewController.swift */; };
+		FAC03DCE26F57ABE00EAEC9A /* AdsVideoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAC03DC926F57ABE00EAEC9A /* AdsVideoView.xib */; };
+		FAC03DCF26F57ABE00EAEC9A /* AdsVideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC03DCA26F57ABE00EAEC9A /* AdsVideoView.swift */; };
+		FAC03DD026F57ABE00EAEC9A /* AdsVideoViewVertical.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAC03DCB26F57ABE00EAEC9A /* AdsVideoViewVertical.xib */; };
+		FAC03DD126F57ABE00EAEC9A /* VideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC03DCC26F57ABE00EAEC9A /* VideoView.swift */; };
+		FAC03DD226F57ABE00EAEC9A /* AdsVideoViewVertical.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC03DCD26F57ABE00EAEC9A /* AdsVideoViewVertical.swift */; };
+		FAC03DDA26F57B1B00EAEC9A /* ButtomAdsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC03DD626F57B1B00EAEC9A /* ButtomAdsView.swift */; };
+		FAC03DDB26F57B1B00EAEC9A /* ButtomAdsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAC03DD726F57B1B00EAEC9A /* ButtomAdsView.xib */; };
+		FAC03DDC26F57B1B00EAEC9A /* ButtomAdsDownVerticalView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAC03DD826F57B1B00EAEC9A /* ButtomAdsDownVerticalView.xib */; };
+		FAC03DDD26F57B1B00EAEC9A /* ButtomAdsDownVerticalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC03DD926F57B1B00EAEC9A /* ButtomAdsDownVerticalView.swift */; };
+		FAC03DE226F57BA200EAEC9A /* AdsDropDownText.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAC03DDF26F57BA200EAEC9A /* AdsDropDownText.xib */; };
+		FAC03DE326F57BA200EAEC9A /* MarqueeLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC03DE026F57BA200EAEC9A /* MarqueeLabel.swift */; };
+		FAC03DE426F57BA200EAEC9A /* AdsDropDownText.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC03DE126F57BA200EAEC9A /* AdsDropDownText.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -355,6 +382,33 @@
 		FA8E28E126AD543100ABFA42 /* PopupCountDown.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PopupCountDown.xib; sourceTree = "<group>"; };
 		FA8E291026AD553800ABFA42 /* AdsOn9Pay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdsOn9Pay.swift; sourceTree = "<group>"; };
 		FA8E291226AD553800ABFA42 /* AdsSDK.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdsSDK.swift; sourceTree = "<group>"; };
+		FAC03DA526F5792200EAEC9A /* AdsOnlyImageVerticalView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdsOnlyImageVerticalView.swift; sourceTree = "<group>"; };
+		FAC03DA626F5792200EAEC9A /* AdsOnyImage.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AdsOnyImage.xib; sourceTree = "<group>"; };
+		FAC03DA826F5792200EAEC9A /* AdsOnyImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdsOnyImage.swift; sourceTree = "<group>"; };
+		FAC03DA926F5792200EAEC9A /* AdsOnlyImageVerticalView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AdsOnlyImageVerticalView.xib; sourceTree = "<group>"; };
+		FAC03DB126F57A1300EAEC9A /* AdsDropDownView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdsDropDownView.swift; sourceTree = "<group>"; };
+		FAC03DB226F57A1300EAEC9A /* AdsDropDownVerticalView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AdsDropDownVerticalView.xib; sourceTree = "<group>"; };
+		FAC03DB326F57A1300EAEC9A /* AdsWhire.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AdsWhire.xib; sourceTree = "<group>"; };
+		FAC03DB426F57A1300EAEC9A /* AdsWhire.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdsWhire.swift; sourceTree = "<group>"; };
+		FAC03DB526F57A1300EAEC9A /* AdsDropDownVerticalView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdsDropDownVerticalView.swift; sourceTree = "<group>"; };
+		FAC03DB626F57A1300EAEC9A /* AdsDropDownView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AdsDropDownView.xib; sourceTree = "<group>"; };
+		FAC03DB726F57A1300EAEC9A /* CircularProgressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircularProgressView.swift; sourceTree = "<group>"; };
+		FAC03DC026F57A6000EAEC9A /* AdsLongImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdsLongImageViewController.swift; sourceTree = "<group>"; };
+		FAC03DC126F57A6000EAEC9A /* AdsLongImageVerticalViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AdsLongImageVerticalViewController.xib; sourceTree = "<group>"; };
+		FAC03DC226F57A6000EAEC9A /* AdsLongImageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AdsLongImageViewController.xib; sourceTree = "<group>"; };
+		FAC03DC326F57A6000EAEC9A /* AdsLongImageVerticalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdsLongImageVerticalViewController.swift; sourceTree = "<group>"; };
+		FAC03DC926F57ABE00EAEC9A /* AdsVideoView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AdsVideoView.xib; sourceTree = "<group>"; };
+		FAC03DCA26F57ABE00EAEC9A /* AdsVideoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdsVideoView.swift; sourceTree = "<group>"; };
+		FAC03DCB26F57ABE00EAEC9A /* AdsVideoViewVertical.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AdsVideoViewVertical.xib; sourceTree = "<group>"; };
+		FAC03DCC26F57ABE00EAEC9A /* VideoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoView.swift; sourceTree = "<group>"; };
+		FAC03DCD26F57ABE00EAEC9A /* AdsVideoViewVertical.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdsVideoViewVertical.swift; sourceTree = "<group>"; };
+		FAC03DD626F57B1B00EAEC9A /* ButtomAdsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtomAdsView.swift; sourceTree = "<group>"; };
+		FAC03DD726F57B1B00EAEC9A /* ButtomAdsView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ButtomAdsView.xib; sourceTree = "<group>"; };
+		FAC03DD826F57B1B00EAEC9A /* ButtomAdsDownVerticalView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ButtomAdsDownVerticalView.xib; sourceTree = "<group>"; };
+		FAC03DD926F57B1B00EAEC9A /* ButtomAdsDownVerticalView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtomAdsDownVerticalView.swift; sourceTree = "<group>"; };
+		FAC03DDF26F57BA200EAEC9A /* AdsDropDownText.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AdsDropDownText.xib; sourceTree = "<group>"; };
+		FAC03DE026F57BA200EAEC9A /* MarqueeLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarqueeLabel.swift; sourceTree = "<group>"; };
+		FAC03DE126F57BA200EAEC9A /* AdsDropDownText.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdsDropDownText.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -674,6 +728,12 @@
 		FA8E289C26AD525000ABFA42 /* Viewcontroller */ = {
 			isa = PBXGroup;
 			children = (
+				FAC03DDE26F57B8600EAEC9A /* AdsDropDownText */,
+				FAC03DD526F57AFF00EAEC9A /* ButtomAdsView */,
+				FAC03DC826F57AA000EAEC9A /* AdsVideo */,
+				FAC03DBF26F57A3D00EAEC9A /* AdsLongImages */,
+				FAC03DB026F579B700EAEC9A /* AdsDropDown */,
+				FAC03DA426F578F200EAEC9A /* AdsOnyImage */,
 				FA8E28DF26AD540900ABFA42 /* PopupCountDown */,
 				FA8E289D26AD529700ABFA42 /* SwiftMessagesSegue.swift */,
 				FA8E289F26AD529700ABFA42 /* TacoDialogView.swift */,
@@ -689,6 +749,75 @@
 				FA8E28E126AD543100ABFA42 /* PopupCountDown.xib */,
 			);
 			path = PopupCountDown;
+			sourceTree = "<group>";
+		};
+		FAC03DA426F578F200EAEC9A /* AdsOnyImage */ = {
+			isa = PBXGroup;
+			children = (
+				FAC03DA526F5792200EAEC9A /* AdsOnlyImageVerticalView.swift */,
+				FAC03DA926F5792200EAEC9A /* AdsOnlyImageVerticalView.xib */,
+				FAC03DA826F5792200EAEC9A /* AdsOnyImage.swift */,
+				FAC03DA626F5792200EAEC9A /* AdsOnyImage.xib */,
+			);
+			path = AdsOnyImage;
+			sourceTree = "<group>";
+		};
+		FAC03DB026F579B700EAEC9A /* AdsDropDown */ = {
+			isa = PBXGroup;
+			children = (
+				FAC03DB526F57A1300EAEC9A /* AdsDropDownVerticalView.swift */,
+				FAC03DB226F57A1300EAEC9A /* AdsDropDownVerticalView.xib */,
+				FAC03DB126F57A1300EAEC9A /* AdsDropDownView.swift */,
+				FAC03DB626F57A1300EAEC9A /* AdsDropDownView.xib */,
+				FAC03DB426F57A1300EAEC9A /* AdsWhire.swift */,
+				FAC03DB326F57A1300EAEC9A /* AdsWhire.xib */,
+				FAC03DB726F57A1300EAEC9A /* CircularProgressView.swift */,
+			);
+			path = AdsDropDown;
+			sourceTree = "<group>";
+		};
+		FAC03DBF26F57A3D00EAEC9A /* AdsLongImages */ = {
+			isa = PBXGroup;
+			children = (
+				FAC03DC326F57A6000EAEC9A /* AdsLongImageVerticalViewController.swift */,
+				FAC03DC126F57A6000EAEC9A /* AdsLongImageVerticalViewController.xib */,
+				FAC03DC026F57A6000EAEC9A /* AdsLongImageViewController.swift */,
+				FAC03DC226F57A6000EAEC9A /* AdsLongImageViewController.xib */,
+			);
+			path = AdsLongImages;
+			sourceTree = "<group>";
+		};
+		FAC03DC826F57AA000EAEC9A /* AdsVideo */ = {
+			isa = PBXGroup;
+			children = (
+				FAC03DCA26F57ABE00EAEC9A /* AdsVideoView.swift */,
+				FAC03DC926F57ABE00EAEC9A /* AdsVideoView.xib */,
+				FAC03DCD26F57ABE00EAEC9A /* AdsVideoViewVertical.swift */,
+				FAC03DCB26F57ABE00EAEC9A /* AdsVideoViewVertical.xib */,
+				FAC03DCC26F57ABE00EAEC9A /* VideoView.swift */,
+			);
+			path = AdsVideo;
+			sourceTree = "<group>";
+		};
+		FAC03DD526F57AFF00EAEC9A /* ButtomAdsView */ = {
+			isa = PBXGroup;
+			children = (
+				FAC03DD926F57B1B00EAEC9A /* ButtomAdsDownVerticalView.swift */,
+				FAC03DD826F57B1B00EAEC9A /* ButtomAdsDownVerticalView.xib */,
+				FAC03DD626F57B1B00EAEC9A /* ButtomAdsView.swift */,
+				FAC03DD726F57B1B00EAEC9A /* ButtomAdsView.xib */,
+			);
+			path = ButtomAdsView;
+			sourceTree = "<group>";
+		};
+		FAC03DDE26F57B8600EAEC9A /* AdsDropDownText */ = {
+			isa = PBXGroup;
+			children = (
+				FAC03DE126F57BA200EAEC9A /* AdsDropDownText.swift */,
+				FAC03DDF26F57BA200EAEC9A /* AdsDropDownText.xib */,
+				FAC03DE026F57BA200EAEC9A /* MarqueeLabel.swift */,
+			);
+			path = AdsDropDownText;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -797,6 +926,7 @@
 				FA8E286426AD516F00ABFA42 /* errorIconSubtle@3x.png in Resources */,
 				FA8E286726AD516F00ABFA42 /* errorIconLight.png in Resources */,
 				FA8E284226AD516F00ABFA42 /* iconCloseLongImage@3x.png in Resources */,
+				FAC03DBD26F57A1300EAEC9A /* AdsDropDownView.xib in Resources */,
 				FA8E284926AD516F00ABFA42 /* errorIcon.png in Resources */,
 				FA8E28A126AD529700ABFA42 /* TacoDialogView.xib in Resources */,
 				FA8E287A26AD516F00ABFA42 /* MessageView.xib in Resources */,
@@ -815,11 +945,13 @@
 				FA8E284C26AD516F00ABFA42 /* icon_close@3x.png in Resources */,
 				FA8E286026AD516F00ABFA42 /* CardView.xib in Resources */,
 				FA8E285726AD516F00ABFA42 /* errorIconLight@3x.png in Resources */,
+				FAC03DB926F57A1300EAEC9A /* AdsDropDownVerticalView.xib in Resources */,
 				FA8E283426AD516F00ABFA42 /* up@3x.png in Resources */,
 				FA8E285926AD516F00ABFA42 /* CenteredView.xib in Resources */,
 				FA8E287B26AD516F00ABFA42 /* ic_close@2x.png in Resources */,
 				FA8E288326AD516F00ABFA42 /* errorIcon@3x.png in Resources */,
 				FA8E286A26AD516F00ABFA42 /* infoIcon@2x.png in Resources */,
+				FAC03DAB26F5792200EAEC9A /* AdsOnyImage.xib in Resources */,
 				FA8E286C26AD516F00ABFA42 /* icon_close@2x.png in Resources */,
 				FA8E285A26AD516F00ABFA42 /* successIconSubtle@3x.png in Resources */,
 				FA8E285F26AD516F00ABFA42 /* warningIconLight@3x.png in Resources */,
@@ -828,6 +960,7 @@
 				FA8E285226AD516F00ABFA42 /* infoIcon.png in Resources */,
 				FA8E284026AD516F00ABFA42 /* play@2x.png in Resources */,
 				FA8E288426AD516F00ABFA42 /* turnOnVolum@3x.png in Resources */,
+				FAC03DDC26F57B1B00EAEC9A /* ButtomAdsDownVerticalView.xib in Resources */,
 				FA8E287826AD516F00ABFA42 /* infoIconSubtle@3x.png in Resources */,
 				FA8E285126AD516F00ABFA42 /* refresh.png in Resources */,
 				FA8E287426AD516F00ABFA42 /* errorIcon@2x.png in Resources */,
@@ -841,6 +974,8 @@
 				FA8E284726AD516F00ABFA42 /* TabView.xib in Resources */,
 				FA8E285326AD516F00ABFA42 /* play@3x.png in Resources */,
 				FA8E286B26AD516F00ABFA42 /* warningIconSubtle.png in Resources */,
+				FAC03DAE26F5792200EAEC9A /* AdsOnlyImageVerticalView.xib in Resources */,
+				FAC03DCE26F57ABE00EAEC9A /* AdsVideoView.xib in Resources */,
 				FA8E283226AD516F00ABFA42 /* errorIconSubtle.png in Resources */,
 				FA8E284D26AD516F00ABFA42 /* infoIconSubtle.png in Resources */,
 				FA8E286526AD516F00ABFA42 /* Funads776@3x.png in Resources */,
@@ -853,12 +988,16 @@
 				FA8E288026AD516F00ABFA42 /* successIcon@2x.png in Resources */,
 				FA8E285B26AD516F00ABFA42 /* volum.png in Resources */,
 				FA8E283A26AD516F00ABFA42 /* bgDropDownView@3x.png in Resources */,
+				FAC03DBA26F57A1300EAEC9A /* AdsWhire.xib in Resources */,
+				FAC03DC526F57A6000EAEC9A /* AdsLongImageVerticalViewController.xib in Resources */,
 				FA8E283526AD516F00ABFA42 /* iconCloseLongImage.png in Resources */,
 				FA8E286F26AD516F00ABFA42 /* infoIconLight@2x.png in Resources */,
 				FA8E284B26AD516F00ABFA42 /* bgDropDownView.png in Resources */,
 				FA8E284E26AD516F00ABFA42 /* pause@2x.png in Resources */,
 				FA8E287526AD516F00ABFA42 /* refresh@3x.png in Resources */,
+				FAC03DDB26F57B1B00EAEC9A /* ButtomAdsView.xib in Resources */,
 				FA8E286E26AD516F00ABFA42 /* successIconLight@2x.png in Resources */,
+				FAC03DD026F57ABE00EAEC9A /* AdsVideoViewVertical.xib in Resources */,
 				FA8E283F26AD516F00ABFA42 /* infoIconSubtle@2x.png in Resources */,
 				FA8E284826AD516F00ABFA42 /* ic_dowload@2x.png in Resources */,
 				FA8E287C26AD516F00ABFA42 /* turnOnVolum@2x.png in Resources */,
@@ -868,6 +1007,8 @@
 				FA8E286326AD516F00ABFA42 /* G2x.png in Resources */,
 				FA8E283926AD516F00ABFA42 /* icon_close.png in Resources */,
 				FA8E287126AD516F00ABFA42 /* warningIconLight.png in Resources */,
+				FAC03DE226F57BA200EAEC9A /* AdsDropDownText.xib in Resources */,
+				FAC03DC626F57A6000EAEC9A /* AdsLongImageViewController.xib in Resources */,
 				FA8E286226AD516F00ABFA42 /* warningIconSubtle@3x.png in Resources */,
 				FA8E287926AD516F00ABFA42 /* infoIconLight@3x.png in Resources */,
 			);
@@ -944,21 +1085,30 @@
 				FA8E278F26AD16F100ABFA42 /* Mapper.swift in Sources */,
 				FA8E27C626AD17EC00ABFA42 /* MarginAdjustable+Extensions.swift in Sources */,
 				FA8E275D26AD168F00ABFA42 /* Inventorys.swift in Sources */,
+				FAC03DE426F57BA200EAEC9A /* AdsDropDownText.swift in Sources */,
 				FA8E274A26AD164A00ABFA42 /* Blog.swift in Sources */,
 				FA8E274F26AD167900ABFA42 /* Storage.swift in Sources */,
 				FA8E288826AD51AE00ABFA42 /* MessageView.swift in Sources */,
 				FA8E27DB26AD181A00ABFA42 /* MaskingView.swift in Sources */,
 				FA8E277B26AD16F100ABFA42 /* DictionaryTransform.swift in Sources */,
+				FAC03DE326F57BA200EAEC9A /* MarqueeLabel.swift in Sources */,
+				FAC03DCF26F57ABE00EAEC9A /* AdsVideoView.swift in Sources */,
 				FA8E27CC26AD17EC00ABFA42 /* ExApplication.swift in Sources */,
+				FAC03DB826F57A1300EAEC9A /* AdsDropDownView.swift in Sources */,
 				FA8E278E26AD16F100ABFA42 /* DateTransform.swift in Sources */,
 				FA8E279026AD16F100ABFA42 /* ImmutableMappable.swift in Sources */,
 				FA8E27AF26AD178400ABFA42 /* AccessibleMessage.swift in Sources */,
+				FAC03DDA26F57B1B00EAEC9A /* ButtomAdsView.swift in Sources */,
+				FAC03DD226F57ABE00EAEC9A /* AdsVideoViewVertical.swift in Sources */,
 				FA8E289026AD51BD00ABFA42 /* SwiftMessages.swift in Sources */,
+				FAC03DBB26F57A1300EAEC9A /* AdsWhire.swift in Sources */,
 				FA8E278A26AD16F100ABFA42 /* DataTransform.swift in Sources */,
 				FA8E275B26AD168F00ABFA42 /* MetaData.swift in Sources */,
 				FA8E274626AD163500ABFA42 /* ApiManager.swift in Sources */,
 				FA8E291526AD553800ABFA42 /* AdsSDK.swift in Sources */,
 				FA8E277E26AD16F100ABFA42 /* ISO8601DateTransform.swift in Sources */,
+				FAC03DAD26F5792200EAEC9A /* AdsOnyImage.swift in Sources */,
+				FAC03DBE26F57A1300EAEC9A /* CircularProgressView.swift in Sources */,
 				FA8E278326AD16F100ABFA42 /* ToJSON.swift in Sources */,
 				FA8E27B026AD178400ABFA42 /* CornerRoundingView.swift in Sources */,
 				FA8E27CB26AD17EC00ABFA42 /* CALayer+Extensions.swift in Sources */,
@@ -976,6 +1126,8 @@
 				FA8E27DA26AD181A00ABFA42 /* PassthroughView.swift in Sources */,
 				FA8E27C526AD17EC00ABFA42 /* NSBundle+Extensions.swift in Sources */,
 				FA8E289926AD522700ABFA42 /* PhysicsPanHandler.swift in Sources */,
+				FAC03DDD26F57B1B00EAEC9A /* ButtomAdsDownVerticalView.swift in Sources */,
+				FAC03DAA26F5792200EAEC9A /* AdsOnlyImageVerticalView.swift in Sources */,
 				FA8E278526AD16F100ABFA42 /* TransformOperators.swift in Sources */,
 				FA8E27AB26AD178400ABFA42 /* Animator.swift in Sources */,
 				FA8E278926AD16F100ABFA42 /* HexColorTransform.swift in Sources */,
@@ -983,11 +1135,14 @@
 				FA8E291326AD553800ABFA42 /* AdsOn9Pay.swift in Sources */,
 				FA8E278826AD16F100ABFA42 /* TransformType.swift in Sources */,
 				FA8E278D26AD16F100ABFA42 /* EnumTransform.swift in Sources */,
+				FAC03DD126F57ABE00EAEC9A /* VideoView.swift in Sources */,
 				FA8E27D926AD181A00ABFA42 /* PassthroughWindow.swift in Sources */,
 				FA8E27AC26AD178400ABFA42 /* BaseView.swift in Sources */,
 				FA8E27B226AD178400ABFA42 /* KeyboardTrackingView.swift in Sources */,
 				FA8E27CE26AD17EC00ABFA42 /* UIEdgeInsets+Extensions.swift in Sources */,
 				FA8E278226AD16F100ABFA42 /* IntegerOperators.swift in Sources */,
+				FAC03DC726F57A6000EAEC9A /* AdsLongImageVerticalViewController.swift in Sources */,
+				FAC03DC426F57A6000EAEC9A /* AdsLongImageViewController.swift in Sources */,
 				FA8E275826AD168F00ABFA42 /* BaseModel.swift in Sources */,
 				FA8E278B26AD16F100ABFA42 /* FromJSON.swift in Sources */,
 				FA8E278426AD16F100ABFA42 /* Operators.swift in Sources */,
@@ -995,6 +1150,7 @@
 				FA8E27C726AD17EC00ABFA42 /* ExUIImageView.swift in Sources */,
 				FA8E27CA26AD17EC00ABFA42 /* UIViewController+Extensions.swift in Sources */,
 				FA8E278726AD16F100ABFA42 /* DateFormatterTransform.swift in Sources */,
+				FAC03DBC26F57A1300EAEC9A /* AdsDropDownVerticalView.swift in Sources */,
 				FA8E275C26AD168F00ABFA42 /* TTrackingAds.swift in Sources */,
 				FA8E27C826AD17EC00ABFA42 /* UILayoutPriority+Extensions.swift in Sources */,
 				FA8E27AE26AD178400ABFA42 /* Weak.swift in Sources */,
