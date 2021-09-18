@@ -7,17 +7,19 @@
 import Foundation
 
 open class NinePayAds: NSObject {
-    open class func initAds(api_key: String, completion: @escaping ([Inventory]) -> ()) {
+    
+    //MARK: Init Ads with ads key
+    open class func init_ads(api_key: String, completion: @escaping ([Inventory]) -> ()) {
         Storage.app_id = api_key
         APIManage.shared.getApp(ApiKey: api_key) { (status, Inventorys) in
             if status != false {
                 Storage.setInventorys(Inventorys)
-//                Storage.requestPermission()
                 completion(Inventorys.data ?? [])
             }
         }
     }
-
+    
+    //MARK: show ads with inventory code
     open class func showAdsOn9payApp(code: String, ctaType: String ,completion: @escaping (String) -> ()) {
         if let data = Storage.getInventorysWithCode(code: code) {
             AdsIOSControl.showAdsSDK(code: data.code, id: data.id)
